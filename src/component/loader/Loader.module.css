@@ -1,0 +1,23 @@
+.container{
+    background-image: url("/public/img/loader/loaderPageBG.png");
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+.logo{
+    margin-top: 51px;
+    background-image: url("/public/img/loader/logoLoaderPage.png");
+    width: 557px;
+    height: 151px;
+}
+.spaceship{
+    background-image: url("/public/img/loader/spaceshipLoaderPage.png");
+    width: 641px;
+    height: 350px;
+    margin-top: 208px;
+    margin-bottom: 298px;
+}
