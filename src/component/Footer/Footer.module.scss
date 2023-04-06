@@ -1,0 +1,33 @@
+
+.footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.logoFooter{
+    margin: 10px;
+    background-image: url("../../assets/img/footer/logoFooter.svg");
+    width: 250px;
+    height: 90px;
+}
+.logoAndNavMenuContainer{
+    flex-wrap: wrap;
+    align-items: center;
+    display: flex;
+
+}
+.contactContainer{
+    align-items: center;
+    display: flex;
+}
+.gitLogo{
+    margin: 10px;
+    background-image: url("../../assets/img/footer/logoGitHub.svg");
+    width: 33px;
+    height: 30px;
+}
+.contactDescription{
+    text-decoration: none;
+    color: $textColor;
+}

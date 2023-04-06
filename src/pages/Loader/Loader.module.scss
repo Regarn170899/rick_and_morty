@@ -1,5 +1,5 @@
 .container{
-    background-image: url("/public/img/loader/loaderPageBG.png");
+    background-image: url("../../assets/img/loader/loaderPageBG.png");
     width: 100%;
     height: 100%;
     background-size: cover;
@@ -9,7 +9,7 @@
 
 }
 .spaceship{
-    background-image: url("/public/img/loader/spaceshipLoaderPage.png");
+    background-image: url("../../assets/img/loader/spaceshipLoaderPage.svg");
     width: 641px;
     height: 350px;
     margin-top: 208px;

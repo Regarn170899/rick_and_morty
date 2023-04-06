@@ -17,9 +17,10 @@ export const planetsSlice = createSlice({
         setPlanets: (state, action: PayloadAction<any[]>) => {
             state.list = action.payload
         },
+
     },
 })
 
-export const { setPlanets } = planetsSlice.actions
+export const { setPlanets} = planetsSlice.actions
 
 export default planetsSlice.reducer
