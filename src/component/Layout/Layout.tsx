@@ -1,7 +1,7 @@
-import React, { ReactElement} from 'react';
-import {Link} from "react-router-dom";
-import {arrMenu, footerText} from '../../Constans';
-
+import React from 'react';
+import {footerText} from '../../Constans';
+import Header from "../Header/Header";
+import styles from"./Layout.module.css"
 
 type Props = {
     children: JSX.Element,
@@ -9,12 +9,10 @@ type Props = {
 const Layout = ({children}:Props) => {
     return (
         <div>
-            <header >
-                {arrMenu.map((itemMenu) :ReactElement =>{
-                     return (<Link  to ='/'>{itemMenu}</Link>)
-                })
-                }
+            <header className={styles.headerContainer}>
+                <Header/>
             </header>
+
             {children}
             <footer>
                 {footerText}

@@ -8,12 +8,6 @@
     flex-direction: column;
 
 }
-.logo{
-    margin-top: 51px;
-    background-image: url("/public/img/loader/logoLoaderPage.png");
-    width: 557px;
-    height: 151px;
-}
 .spaceship{
     background-image: url("/public/img/loader/spaceshipLoaderPage.png");
     width: 641px;

@@ -1,0 +1,13 @@
+
+.navContainer{
+    margin: 20px;
+    width:300px;
+    display: flex;
+    justify-content: space-between;
+}
+.navItem{
+    font-family: IBM_Plex_Mono, serif;
+    color: #87F54E;
+    text-decoration: none;
+
+}
