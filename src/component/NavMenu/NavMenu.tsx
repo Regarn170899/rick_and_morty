@@ -1,7 +1,7 @@
 import React, {ReactElement} from 'react';
-import {arrMenu} from "../../Constans";
+import {arrMenu} from "@constants/index";
 import {Link} from "react-router-dom";
-import styles from './NavMenu.module.css'
+import styles from './NavMenu.module.scss'
 
 const NavMenu = () => {
     return (
