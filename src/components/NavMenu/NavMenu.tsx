@@ -7,7 +7,7 @@ const NavMenu = () => {
     return (
         <div className={styles.navContainer}>
             {arrMenu.map((itemMenu) :ReactElement =>{
-                return (<Link className={styles.navItem} to ='/'>{itemMenu}</Link>)
+                return (<Link key={itemMenu.id} className={styles.navItem} to ={itemMenu.path}>{itemMenu.name}</Link>)
             })
             }
         </div>

@@ -5,7 +5,7 @@
       "@api/*": ["api/*"],
       "@pages/*": ["pages/*"],
       "@store/*": ["store/*"],
-      "@custom-types/*": ["custom-types/*"],
+      "@customTypes/*": ["customTypes/*"],
       "@navigation/*": ["navigation/*"],
       "@utils/*": ["utils/*"],
       "@components/*": ["components/*"],
