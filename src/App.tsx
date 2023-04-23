@@ -1,7 +1,7 @@
 import React from 'react';
 import {BrowserRouter} from "react-router-dom";
 import './App.css';
-import RouterConfig from "./component/RouterConfig/RouterConfig";
+import RouterConfig from "./components/RouterConfig/RouterConfig";
 
 function App() {
   return (
@@ -9,7 +9,6 @@ function App() {
     <BrowserRouter>
         <RouterConfig/>
     </BrowserRouter>
-
     </div>
   );
 }
