@@ -2,6 +2,7 @@ import {createAsyncThunk, createSlice, PayloadAction,} from "@reduxjs/toolkit";
 import { RootState } from "store/index";
 import {getApiCharacters} from "api";
 import {RMCharacter}from "@customTypes/index";
+import { setIsFavoriteProp} from "@utils/index";
 
 
 interface CharactersState {
@@ -15,19 +16,28 @@ const initialState: CharactersState = {
     charactersList: [],
     page: 1,
 };
-
 export const getCharacters = createAsyncThunk(
     "characters/getCharacters",
     async (page: number) => {
-        const { results } = await getApiCharacters(page);
-        return results
-    }
-);
+        const {results} = await getApiCharacters(page);
+        return setIsFavoriteProp(results);
+    });
 
 export const charactersSlice = createSlice({
     name: "characters",
     initialState,
     reducers: {
+        updateFavorites(state,action:PayloadAction<RMCharacter>){
+            state.charactersList=state.charactersList.map((character:RMCharacter)=>{
+                if(character.id===action.payload.id){
+                    return{
+                        ...character,
+                        isFavorite: !character.isFavorite,
+                    }
+                }
+                return character;
+            })
+        },
         setPage(state,action:PayloadAction<number>){
             state.page=action.payload;
         }
@@ -52,7 +62,7 @@ export const charactersSlice = createSlice({
 export const selectCharacters = (state: RootState) =>
     state.characters.charactersList;
 
-export const {setPage}=charactersSlice.actions
+export const {updateFavorites,setPage}=charactersSlice.actions
 
 export const selectPage = (state: RootState) =>
     state.characters.page;

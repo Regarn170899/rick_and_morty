@@ -3,6 +3,7 @@ import styles from "./Home.module.scss"
 import {useAppDispatch, useAppSelector} from "@store/hooks";
 import {getCharacters, selectPage, setPage} from "@store/slices/charactersSlice";
 import CharactersCard from "@components/CharacterCard/CharactersCard";
+import {RMCharacter} from "@customTypes/index";
 
 
 
@@ -13,6 +14,7 @@ const Home = () => {
     const handleMoreChars=()=>{
        dispatch(setPage(page+1));
     }
+
 
     useEffect(()=>{
         dispatch(getCharacters(page))
