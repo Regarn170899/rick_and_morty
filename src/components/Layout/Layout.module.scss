@@ -2,6 +2,15 @@
     position: absolute;
     width: 100%;
 }
+.childrenContainer{
+    padding-top: 200px;
+    padding-bottom: 220px;
+    background-image: url("../../assets/img/Home/homeBG.png");
+}
+.layoutContainer{
+    height: 100vh;
+
+}
 .footerContainer{
     background-color: $bgFooterColor;
 }
