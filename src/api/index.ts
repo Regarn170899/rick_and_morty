@@ -14,3 +14,12 @@ export const getApiCharacters = async (page: number) => {
         return [];
     }
 };
+export const getApiSingleCharacters = async (id: string) => {
+    try {
+        const { data } = await instance.get(`${API_URL.getCharacterById}${id}`);
+        return data;
+    } catch (e) {
+        console.error(e);
+        return [];
+    }
+};

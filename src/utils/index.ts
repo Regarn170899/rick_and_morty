@@ -1,19 +1,21 @@
 import {RMCharacter} from "@customTypes/index";
 
-export const setIsFavoriteProp=(results:RMCharacter[])=>{
+export const checkIsFavorite=(char:RMCharacter)=>{
     const LsCharacters =JSON.parse(localStorage.getItem("favCharsIds")!)
-    return results.map((char: RMCharacter) =>{
-        if(LsCharacters.includes(char.id)){
-            return {
-                ...char,
-                isFavorite: true
-            }
+    if(LsCharacters.includes(char.id)){
+        return {
+            ...char,
+            isFavorite: true
         }
-            return {
-                ...char,
-                isFavorite: false
-            }
-    });
+    }
+    return {
+        ...char,
+        isFavorite: false
+    }
+}
+
+export const setIsFavoriteProp=(results:RMCharacter[])=>{
+    return results.map((char: RMCharacter) =>checkIsFavorite(char));
 }
 export const addCharactersInLS=(char:RMCharacter)=>{
     const LsCharacters =JSON.parse(localStorage.getItem("favCharsIds")!)
