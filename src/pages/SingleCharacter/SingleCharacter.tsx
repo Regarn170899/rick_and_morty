@@ -13,7 +13,7 @@ import {addCharactersInLS} from "@utils/index";
 import { ReactComponent as TransparentStar } from '@assets/img/Home/FavoritesFalse.svg';
 import { ReactComponent as ColoredStar } from '@assets/img/Home/FavoritesTrue.svg';
 import SpaceGun  from '@assets/img/singleCharCard/sapceGun.svg';
-import  Planet  from '@assets/img/singleCharCard/planet.svg';
+import Planet  from '@assets/img/singleCharCard/planet.svg';
 import Atom  from '@assets/img/singleCharCard/atom.svg';
 import Spaceship from '@assets/img/singleCharCard/spaceship.svg';
 
