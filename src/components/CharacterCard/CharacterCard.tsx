@@ -40,7 +40,7 @@ const CharacterCard = ({ char }: Prop) => {
         {char.isFavorite ? <ColoredStar /> : <TransparentStar />}
       </div>
       <Link
-        to={`/${char.id}`}
+        to={`/character/${char.id}`}
         key={char.id}
         onClick={handelSetSingleChar(char)}
       >

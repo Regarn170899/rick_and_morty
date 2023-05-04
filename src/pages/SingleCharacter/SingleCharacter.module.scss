@@ -1,3 +1,4 @@
+
 .singleCharCard{
   margin: 0 auto;
   position: relative;
@@ -6,20 +7,22 @@
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  width: 900px;
-  height: 550px;
+  max-width: 900px;
+  min-height: 500px;
   border-radius: 50px;
   background-color: aliceblue;
 }
 .descriptionContainer{
+  text-align: left;
   height: 430px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 .textContainer{
+  padding: 10px;
   border: 2px solid #000000;
-  width: 300px;
+  max-width: 300px;
   height: 300px;
   background-color: $textColor;
   color: black;
@@ -40,13 +43,18 @@
 .favorite{
   cursor: pointer;
   position: absolute;
-  top: 90px;
-  left: 30px;
+  top: 70px;
+  left: 40px;
   width: 64px;
   height: 64px;
 }
 .charName{
   font-size: 40px;
+}
+.line{
+  width: 170px;
+  border: 1px solid black;
+
 }
 .singleCharContainer{
   width: 100%;
@@ -54,9 +62,10 @@
   background-size: cover;
 }
 .singleCharImg{
-  background-size: cover;
-  width: 430px;
-  height: 430px;
+  max-width: 470px;
+  max-height: 430px;
+  flex: 1 1;
+  margin: 10px;
   border: 2px solid #000000;
   border-radius: 28px;
 }

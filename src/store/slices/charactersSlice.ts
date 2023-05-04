@@ -110,10 +110,8 @@ export const charactersSlice = createSlice({
       .addCase(getOnlyFavChars.fulfilled, (state, action) => {
         const results = action.payload;
         state.status = "success";
-        if (state.favCharactersList.length > 0) {
-          return;
-        }
-        state.favCharactersList = [...state.favCharactersList, ...results];
+
+        state.favCharactersList = [...results];
       });
   },
 });
