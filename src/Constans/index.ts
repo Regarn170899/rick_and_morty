@@ -6,6 +6,7 @@ interface INavItem {
 
 interface PathRouter {
   Home: string;
+  Error: string;
   Favorites: string;
   Contact: string;
   SingleChar: string;
@@ -16,10 +17,11 @@ export const arrMenu: Array<INavItem> = [
   { name: "Contact", path: "Contact", id: 3 },
 ];
 export const PathRouter: PathRouter = {
-  SingleChar: "/:id",
+  Error: "*",
+  SingleChar: "/character/:id",
   Home: "/",
-  Favorites: "Favorites",
-  Contact: "Contact",
+  Favorites: "/favorites",
+  Contact: "/contact",
 };
 
 export const arrShot: any[] = [...Array(4)];
