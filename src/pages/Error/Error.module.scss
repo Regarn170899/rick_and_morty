@@ -11,3 +11,16 @@
   font-size: 40px;
   display: flex;
 }
+@media  (max-width: $tablet){
+  .pickle{
+    background-size: cover;
+    width: 150px;
+  }
+  .descriptionContainer{
+    margin: 0 auto;
+    max-width: 750px;
+    font-size: 40px;
+    display: flex;
+    flex-direction: column;
+  }
+}

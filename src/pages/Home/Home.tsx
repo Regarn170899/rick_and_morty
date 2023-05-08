@@ -3,7 +3,6 @@ import styles from "./Home.module.scss";
 import { useAppDispatch, useAppSelector } from "@store/hooks";
 import {
   getCharacters,
-  getOnlyFavChars,
   selectCharacters,
   selectPage,
   setPage,
@@ -28,7 +27,7 @@ const Home = () => {
     <div className={styles.homeContainer}>
       <div className={styles.homeCardContainer}>
         {characters.map((char: RMCharacter) => {
-          return <CharacterCard char={char} />;
+          return <CharacterCard key={char.id} char={char} />;
         })}
       </div>
       <div className={styles.homeBtnContainer}>

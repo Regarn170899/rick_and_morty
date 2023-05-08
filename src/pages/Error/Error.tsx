@@ -8,7 +8,7 @@ const Error = () => {
       <div className={styles.descriptionContainer}>
         <p>Don’t worry my friend, not an alien penis... Flip the pickle.</p>
         <div>
-          <img src={pickle} alt="pickle image" />
+          <img src={pickle} className={styles.pickle} alt="pickle image" />
         </div>
       </div>
     </div>
