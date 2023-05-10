@@ -2,6 +2,7 @@
   "name": "rick_and_morty",
   "version": "0.1.0",
   "private": true,
+  "homepage": " https://Regarn170899.github.io/rick_and_morty",
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.3",
     "@testing-library/jest-dom": "^5.16.5",
@@ -31,6 +32,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "craco start",
     "build": "craco build",
     "test": "craco test",
@@ -55,6 +58,7 @@
     ]
   },
   "devDependencies": {
-    "@craco/craco": "^7.1.0"
+    "@craco/craco": "^7.1.0",
+    "gh-pages": "^5.0.0"
   }
 }
