@@ -13,11 +13,11 @@ interface PathRouter {
 }
 export const arrMenu: Array<INavItem> = [
   { name: "Home", path: "/", id: 1 },
-  { name: "Favorites", path: "Favorites", id: 2 },
-  { name: "Contact", path: "Contact", id: 3 },
+  { name: "Favorites", path: "favorites", id: 2 },
+  { name: "Contact", path: "contact", id: 3 },
 ];
 export const PathRouter: PathRouter = {
-  Error: "*",
+  Error: "/*",
   SingleChar: "/character/:id",
   Home: "/",
   Favorites: "/favorites",

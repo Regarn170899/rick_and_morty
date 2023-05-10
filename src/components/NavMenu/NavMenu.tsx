@@ -30,9 +30,7 @@ const NavMenu = () => {
               <Link
                 onClick={() => {
                   setIsMenuActive(false);
-                  isMenuActive
-                    ? (document.body.className = "activeScroll")
-                    : (document.body.className = "deactivateScroll");
+                  document.body.className = "activeScroll";
                 }}
                 key={itemMenu.id}
                 className={styles.navItem}
@@ -43,7 +41,7 @@ const NavMenu = () => {
             );
           })}
         </div>
-      </div>{" "}
+      </div>
     </div>
   );
 };
