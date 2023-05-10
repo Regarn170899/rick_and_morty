@@ -9,5 +9,103 @@
     font-family: IBM_Plex_Mono, serif;
     color: $textColor;
     text-decoration: none;
+}
+.burger_btn{
+    top:30px;
+    right: 30px;
+    position: absolute;
+    display: none;
+    z-index: 4;
+    width: 60px;
+    height: 45px;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .5s ease-in-out;
+    -moz-transition: .5s ease-in-out;
+    -o-transition: .5s ease-in-out;
+    transition: .5s ease-in-out;
+    cursor: pointer;
+}
+
+.burger_btn span{
+    z-index: 4;
+    position: absolute;
+    height: 3px;
+    width: 50px;
+    background: $textColor;
+    opacity: 1;
+    -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -webkit-transition: .25s ease-in-out;
+    -moz-transition: .25s ease-in-out;
+    -o-transition: .25s ease-in-out;
+    transition: .25s ease-in-out;
+}
+.burger_btn span:nth-child(1) {
+    top: 0px;
+}
+
+.burger_btn span:nth-child(2) {
+    top: 18px;
+}
+
+.burger_btn span:nth-child(3) {
+    top: 36px;
+}
+.burger_btn.open span:nth-child(1) {
+    top: 18px;
+    -webkit-transform: rotate(135deg);
+    -moz-transform: rotate(135deg);
+    -o-transform: rotate(135deg);
+    transform: rotate(135deg);
+}
+.burger_btn.open span:nth-child(2) {
+    opacity: 0;
+    left: -60px;
+}
+.burger_btn.open span:nth-child(3) {
+    top: 18px;
+    -webkit-transform: rotate(-135deg);
+    -moz-transform: rotate(-135deg);
+    -o-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+}
+@media (max-width: $desktop){
+    .burger_btn{
+        display: flex;
+    }
+
+    .navContainer{
+        margin: unset;
+        z-index: 2;
+        background-color: $bgFooterColor;
+        height: 100vh;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        flex-direction: column;
+        align-items: center;
+        transform: translateY(-113%);
+    }
+    .active {
+        overflow-y: hidden;
+        text-align: center;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        transform: translateY(-10%);
+        transition: .25s ease-in-out;
+    }
+    .navItem{
+        font-family: IBM_Plex_Mono, serif;
+        font-size: 50px;
+        color: $textColor;
+        text-decoration: none;
+
+    }
 
 }

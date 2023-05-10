@@ -21,7 +21,7 @@
 }
 .textContainer{
   padding: 10px;
-  border: 2px solid #000000;
+  border: 2px solid black;
   max-width: 300px;
   height: 300px;
   background-color: $textColor;
@@ -34,7 +34,7 @@
   font-size: 20px;
 }
 .iconContainer{
-  border: 2px solid #000000;
+  border: 2px solid black;
   display: flex;
   justify-content: space-around;
   background-color: $textColor;
@@ -62,10 +62,82 @@
   background-size: cover;
 }
 .singleCharImg{
-  max-width: 470px;
+  width: 470px;
   max-height: 430px;
-  flex: 1 1;
   margin: 10px;
-  border: 2px solid #000000;
+  border: 2px solid black;
   border-radius: 28px;
+}
+@media (max-width: $desktop){
+
+
+  .singleCharCard{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;;
+    align-items: center;
+    padding: 20px;
+    max-width: 500px;
+    min-height: 500px;
+    border-radius: 50px;
+    background-color: aliceblue;
+  }
+  .descriptionContainer{
+    text-align: left;
+    height: 430px;
+    width: 470px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .textContainer{
+    padding: 10px;
+    border: 2px solid black;
+    max-width: 470px;
+    height: 300px;
+    background-color: $textColor;
+    color: black;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 30px;
+    flex-direction: column;
+    font-family: IBM_Plex_Mono, serif;
+    font-size: 20px;
+  }
+  .iconContainer{
+    border: 2px solid black;
+    display: flex;
+    justify-content: space-around;
+    background-color: $textColor;
+    border-radius: 10px;
+  }
+  .favorite{
+    cursor: pointer;
+    position: absolute;
+    top: 70px;
+    left: 40px;
+    width: 64px;
+    height: 64px;
+  }
+  .charName{
+    font-size: 40px;
+  }
+  .line{
+    width: 170px;
+    border: 1px solid black;
+
+  }
+  .singleCharContainer{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+  }
+  .singleCharImg{
+    width: 470px;
+    max-height: 430px;
+    margin: 10px;
+    border: 2px solid black;
+    border-radius: 28px;
+  }
+
 }

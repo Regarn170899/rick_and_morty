@@ -56,8 +56,12 @@ const CharacterCard = ({ char }: Prop) => {
         <div className={styles.spaceGun}>
           <SpaceGun />
         </div>
-        {arrShot.map((shot: any) => {
-          return <div className={styles.shot}>{shot}</div>;
+        {arrShot.map((shot: any, index) => {
+          return (
+            <div key={index} className={styles.shot}>
+              {shot}
+            </div>
+          );
         })}
       </div>
     </div>

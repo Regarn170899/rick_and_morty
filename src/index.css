@@ -17,3 +17,9 @@ code {
   src: local('IBM_Plex_Mono'),
   url("./fonts/IBM_Plex_Mono/IBMPlexMono-Regular.ttf") format('truetype');
 }
+.activeScroll{
+  overflow: scroll;
+}
+.deactivateScroll{
+  overflow: hidden;
+}

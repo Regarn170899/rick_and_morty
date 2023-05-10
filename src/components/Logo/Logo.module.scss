@@ -1,7 +1,12 @@
 
 .logo{
-    background-image: url("../../assets/img/loader/Rick_and_Morty.svg");
     background-size: cover;
     width: 557px;
     height: 171px;
+}
+@media (max-width: $tablet){
+  .logo{
+    background-size: cover;
+    width: 250px;
+  }
 }

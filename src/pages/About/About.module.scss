@@ -10,3 +10,18 @@
 .email{
   color: $textColor;
 }
+@media (max-width: $tablet){
+  .logo{
+    background-size: cover;
+    width: 350px;
+  }
+
+}
+
+@media (max-width: $phone){
+  .logo{
+    background-size: cover;
+    width: 250px;
+  }
+
+}

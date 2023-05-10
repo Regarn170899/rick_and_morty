@@ -24,19 +24,36 @@ const Favorites = () => {
 
   return (
     <div>
-      <div className={styles.favoriteLogoContainer}>
-        <img src={FavoritesLogo} alt="Favorite logo" />
+      <div>
+        <img
+          className={styles.favoriteLogoContainer}
+          src={FavoritesLogo}
+          alt="Favorite logo"
+        />
       </div>
       <Swiper
         navigation={true}
-        slidesPerView={3}
         spaceBetween={-40}
         modules={[Navigation]}
         className={styles.swiper}
+        breakpoints={{
+          1100: {
+            // width: 576,
+            slidesPerView: 3,
+          },
+          800: {
+            // width: 576,
+            slidesPerView: 2,
+          },
+          768: {
+            // width: 768,
+            slidesPerView: 1,
+          },
+        }}
       >
         {characters.map((char: RMCharacter) => {
           return (
-            <SwiperSlide>
+            <SwiperSlide key={char.id}>
               <CharacterCard char={char} />
             </SwiperSlide>
           );
