@@ -83,7 +83,7 @@
         margin: unset;
         z-index: 2;
         background-color: $bgFooterColor;
-        height: 100vh;
+        height: 110vh;
         width: 100%;
         position: absolute;
         left: 0;
@@ -97,7 +97,7 @@
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
-        transform: translateY(-10%);
+        transform: translateY(-13%);
         transition: .25s ease-in-out;
     }
     .navItem{
