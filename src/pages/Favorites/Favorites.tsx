@@ -33,21 +33,19 @@ const Favorites = () => {
       </div>
       <Swiper
         navigation={true}
-        spaceBetween={60}
+        spaceBetween={-30}
         modules={[Navigation]}
         className={styles.swiper}
         breakpoints={{
           1100: {
-            // width: 576,
             slidesPerView: 3,
           },
           800: {
-            // width: 576,
             slidesPerView: 2,
           },
           768: {
-            // width: 768,
             slidesPerView: 1,
+            spaceBetween: 70,
           },
         }}
       >
