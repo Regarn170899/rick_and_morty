@@ -1,31 +1,31 @@
 {
   "files": {
-    "main.css": "/rick_and_morty/static/css/main.21aa0c8e.css",
-    "main.js": "/rick_and_morty/static/js/main.0db3a150.js",
+    "main.css": "/rick_and_morty/static/css/main.72ca22b4.css",
+    "main.js": "/rick_and_morty/static/js/main.d99f4723.js",
     "static/media/loaderPageBG.png": "/rick_and_morty/static/media/loaderPageBG.a117cce7f8e21ce003a9.png",
     "static/media/homeBG.png": "/rick_and_morty/static/media/homeBG.83e253f6e9635c776a0a.png",
     "static/media/IBMPlexMono-Bold.ttf": "/rick_and_morty/static/media/IBMPlexMono-Bold.68c06f9be8ca72ba139f.ttf",
     "static/media/IBMPlexMono-Regular.ttf": "/rick_and_morty/static/media/IBMPlexMono-Regular.ea65486a9889ccce370d.ttf",
-    "static/media/Rick_and_Morty.svg": "/rick_and_morty/static/media/Rick_and_Morty.825aa3f92cebece6449573e2ad79394a.svg",
-    "static/media/logoGitHub.svg": "/rick_and_morty/static/media/logoGitHub.545c2cf0069e2a215d4f.svg",
-    "static/media/logoFooter.svg": "/rick_and_morty/static/media/logoFooter.d03cd73a826175119920.svg",
-    "static/media/pickle.svg": "/rick_and_morty/static/media/pickle.b285b87ba594edf6e21fb1bbbf4900b4.svg",
-    "static/media/favoritesLogo.svg": "/rick_and_morty/static/media/favoritesLogo.beca6f7efdbb22fe73ceb9f1f0a1c3a3.svg",
-    "static/media/spaceshipLoaderPage.svg": "/rick_and_morty/static/media/spaceshipLoaderPage.9d52b77ddccb18271b5f.svg",
-    "static/media/AboutLogo.svg": "/rick_and_morty/static/media/AboutLogo.e5e8906aa5f3249cab5a108df6437c7f.svg",
-    "static/media/space_gun.svg": "/rick_and_morty/static/media/space_gun.cf4747ac30ad01cf9e09afb18500d97f.svg",
-    "static/media/atom.svg": "/rick_and_morty/static/media/atom.709395ea4eb15eec7cc5331ef49ec934.svg",
-    "static/media/planet.svg": "/rick_and_morty/static/media/planet.c0d12be794d1b87d287b90962ce55d1c.svg",
-    "static/media/spaceship.svg": "/rick_and_morty/static/media/spaceship.47f6e8cdfafe7576ea66a664ceacf76b.svg",
-    "static/media/sapceGun.svg": "/rick_and_morty/static/media/sapceGun.518f4a2730257c0d57fb3d21f4264d4a.svg",
+    "static/media/Rick_and_Morty.svg": "/rick_and_morty/static/media/Rick_and_Morty.c003dd2bfe2c794cc1198746abd99591.svg",
+    "static/media/logoGitHub.svg": "/rick_and_morty/static/media/logoGitHub.884dff17307d28bc9660.svg",
+    "static/media/logoFooter.svg": "/rick_and_morty/static/media/logoFooter.e463b8e1c97c56344100.svg",
+    "static/media/pickle.svg": "/rick_and_morty/static/media/pickle.86cc5597c36320a31775aec570594640.svg",
+    "static/media/favoritesLogo.svg": "/rick_and_morty/static/media/favoritesLogo.22d369a2f4bd78d61490ecdaf342f00b.svg",
+    "static/media/spaceshipLoaderPage.svg": "/rick_and_morty/static/media/spaceshipLoaderPage.320644bc99ab29c2db9d.svg",
+    "static/media/AboutLogo.svg": "/rick_and_morty/static/media/AboutLogo.12357926954461248e2d7cebe2da17ca.svg",
+    "static/media/space_gun.svg": "/rick_and_morty/static/media/space_gun.364af790b5b0b1a3bb392afcff2b8b1f.svg",
+    "static/media/atom.svg": "/rick_and_morty/static/media/atom.e50a18a325374a45e5c00ac473455b21.svg",
+    "static/media/planet.svg": "/rick_and_morty/static/media/planet.88235976e34d1ddbb7eb3fdab5a74695.svg",
+    "static/media/spaceship.svg": "/rick_and_morty/static/media/spaceship.b344f4ad2a5414c8aa17c18368a4361d.svg",
+    "static/media/sapceGun.svg": "/rick_and_morty/static/media/sapceGun.ccb3736a3e794da3272b8f3bc49bf91c.svg",
     "index.html": "/rick_and_morty/index.html",
-    "static/media/FavoritesTrue.svg": "/rick_and_morty/static/media/FavoritesTrue.5c0ec44b4961b9065ca19e827ae347b6.svg",
-    "static/media/FavoritesFalse.svg": "/rick_and_morty/static/media/FavoritesFalse.2a55433f89f94accb8cff22b2fbc8b94.svg",
-    "main.21aa0c8e.css.map": "/rick_and_morty/static/css/main.21aa0c8e.css.map",
-    "main.0db3a150.js.map": "/rick_and_morty/static/js/main.0db3a150.js.map"
+    "static/media/FavoritesTrue.svg": "/rick_and_morty/static/media/FavoritesTrue.b573a4e7f1715e83a51c405f882e5007.svg",
+    "static/media/FavoritesFalse.svg": "/rick_and_morty/static/media/FavoritesFalse.dd767137688fb39357ff5b0787db1505.svg",
+    "main.72ca22b4.css.map": "/rick_and_morty/static/css/main.72ca22b4.css.map",
+    "main.d99f4723.js.map": "/rick_and_morty/static/js/main.d99f4723.js.map"
   },
   "entrypoints": [
-    "static/css/main.21aa0c8e.css",
-    "static/js/main.0db3a150.js"
+    "static/css/main.72ca22b4.css",
+    "static/js/main.d99f4723.js"
   ]
 }
