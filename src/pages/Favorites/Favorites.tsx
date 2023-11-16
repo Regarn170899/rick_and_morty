@@ -23,7 +23,7 @@ const Favorites = () => {
   }, [dispatch]);
 
   return (
-    <div>
+    <div className={styles.favoriteContainer}>
       <div>
         <img
           className={styles.favoriteLogoContainer}
